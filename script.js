@@ -62,6 +62,7 @@
     const select = document.querySelector('.select-field select');
     const list = document.querySelector('.publication-list');
     const articles = [...list.querySelectorAll('.publication')];
+    const yearGroups = [...list.querySelectorAll('.publication-year-group')];
     const empty = document.createElement('div');
     empty.className = 'empty';
     empty.hidden = true;
@@ -80,13 +81,17 @@
     list.before(status);
     function updatePublications() {
       const query = input.value.trim().toLowerCase();
-      const topic = select.value.toLowerCase();
+      const year = select.value;
       let matches = 0;
       articles.forEach(article => {
-        const label = article.querySelector('.mini-label').textContent.toLowerCase();
-        const show = article.textContent.toLowerCase().includes(query) && (topic === 'all' || label.includes(topic));
+        const show = article.textContent.toLowerCase().includes(query) && (year === 'All' || article.dataset.year === year);
         article.hidden = !show;
         if (show) matches++;
+      });
+      yearGroups.forEach(group => {
+        const visibleCount = [...group.querySelectorAll('.publication')].filter(article => !article.hidden).length;
+        group.hidden = visibleCount === 0;
+        group.querySelector('.year-publication-count').textContent = `${visibleCount} publication${visibleCount === 1 ? '' : 's'}`;
       });
       empty.hidden = matches > 0;
       status.textContent = `${matches} publication${matches === 1 ? '' : 's'} found`;
