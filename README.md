@@ -49,9 +49,19 @@ The design uses Google Fonts when available and local fallback fonts otherwise. 
 
 ## Review notes
 
-Education and outreach additions remain labeled as proposed content for Prof. Fang's review. Confirm the current team roster, roles, training activities, and opportunities before using the website as an official lab resource. Publication entries are selected highlights rather than a complete publication list.
+Education and outreach additions remain labeled as proposed content for Prof. Fang's review. Confirm the current team roster, roles, training activities, and opportunities before using the website as an official lab resource. The Publications page includes all 107 records from Prof. Fang’s public NCBI bibliography, consolidated into 104 entries with three earlier preprints grouped under their published versions. One book chapter from her faculty profile brings the displayed total to 105. The source pages were checked on November 8, 2026. The year filter follows the final published version when a preprint is grouped with it.
 
 Photographs and established lab content come from the existing University of Illinois Fang Lab website. Reuse in this lab website does not grant a general license for unrelated uses. University branding and official hosting arrangements can be reviewed with the College when moving beyond the draft.
+
+## Content organization
+
+- People contains current appointments, affiliations, career history, and honors.
+- Education contains verified academic training and clearly labeled proposed lab learning content.
+- Research contains mechanistic discoveries, funding context, and projects.
+- Innovation contains the PREVACENT, Swinecheck MP, and EZ-PRRSV technologies.
+- News contains unique press stories, with additional reporting on the same study grouped together.
+- Contact contains the lab mailing address.
+- Publications contains the complete imported collection and the additional book chapter.
 
 ## Content sources
 
@@ -70,3 +80,6 @@ Photographs and established lab content come from the existing University of Ill
 - https://doi.org/10.1128/JVI.01032-06
 
 Additional navigation was inspired by https://sites.google.com/site/xingwangslab/news
+
+
+- https://www.ncbi.nlm.nih.gov/myncbi/ying.fang.4/bibliography/public/
